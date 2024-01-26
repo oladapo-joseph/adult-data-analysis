@@ -1,8 +1,9 @@
-# adult-data-analysis
+# Adult Data Analysis using Clustering
 
-# Clustering
+## Clustering
 
 <img src='clusters.png'>
+
 
 Clustering is a technique in machine learning and data analysis that involves grouping similar data points together based on certain features or characteristics. The goal of clustering is to partition a dataset into groups, or clusters, in such a way that the data points within a cluster are more similar to each other than to those in other clusters. This helps identify patterns, structures, or relationships within the data.
 
@@ -54,7 +55,7 @@ Clustering is a versatile technique used across various domains to uncover patte
 |12|capital-loss |	Integer			|	no |
 |13|hours-per-week|	Integer		|		no |
 |15|native-country	|	Categorical	| no |
-|15|income |	Binary	| no |
+|16|income |	Binary	| no |
 
 <br>
 
@@ -67,6 +68,19 @@ Clustering is a versatile technique used across various domains to uncover patte
   DOI          = https://doi.org/10.24432/C5XW20
 ```
 
-
-
 This notebook is all about carrying out clustering analysis on the Adult dataset to find possible clusters.
+
+## Procedure
+
+1. Carried out data cleaning and pre-processing.
+2. Did PCA analysis on the dataset
+3. Found the number of clusters
+4. Used KMeans algorithm to the train the dataset
+5. Discussed the result
+
+
+After the analysis, I discovered there are 3 major  clusters, and I further analyzed this to discover have a theory that clusters were created based on the Financial Capability
+
+* Class 0: They are majorly the Widowed, Divorced, Separated, Married spouse absent, Married-AF-Spouse 
+* Class 1 : They are majorly married
+* Class 2: They are majorly people that are never married
